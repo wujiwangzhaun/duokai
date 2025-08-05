@@ -109,6 +109,89 @@
         .device-info {
             font-size: 12px;
             color: #86868b;
+            margin-bottom: 25px;
+        }
+        
+        /* 用户评价轮播样式 */
+        .reviews-section {
+            margin-top: 25px;
+            border-top: 1px solid #e5e5e7;
+            padding-top: 20px;
+        }
+        
+        .reviews-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        .review-carousel {
+            position: relative;
+            overflow: hidden;
+            height: 120px;
+        }
+        
+        .review-item {
+            position: absolute;
+            width: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            text-align: left;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .review-item.active {
+            opacity: 1;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .reviewer-name {
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .review-date {
+            font-size: 12px;
+            color: #86868b;
+        }
+        
+        .review-rating {
+            color: #FFD700;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        
+        .review-text {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #c7c7cc;
+            margin: 0 4px;
+            cursor: pointer;
+        }
+        
+        .dot.active {
+            background-color: #007AFF;
         }
     </style>
 </head>
@@ -151,6 +234,127 @@
         <p class="auth-info">正版授权</p>
         
         <p class="device-info">此APP专为IPhone设计</p>
+        
+        <!-- 用户评价轮播 -->
+        <div class="reviews-section">
+            <h3 class="reviews-title">用户评价</h3>
+            <div class="review-carousel">
+                <div class="review-item active">
+                    <div class="review-header">
+                        <span class="reviewer-name">漫步云端</span>
+                        <span class="review-date">2023-05-12</span>
+                    </div>
+                    <div class="review-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                    </div>
+                    <p class="review-text">用了两年多了，非常稳定！工作和生活微信分开，效率提高不少，消息接收及时，强烈推荐！</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">咖啡不加糖</span>
+                        <span class="review-date">2023-04-28</span>
+                    </div>
+                    <div class="review-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                    </div>
+                    <p class="review-text">作为销售，需要同时管理客户和个人微信，这个多开神器太实用了！用了一年多，从未掉线，安装简单。</p>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <span class="reviewer-name">清风徐来</span>
+                        <span class="review-date">2023-04-15</span>
+                    </div>
+                    <div class="review-rating">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#FFD700">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#d1d1d6">
+                            <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/>
+                        </svg>
+                    </div>
+                    <p class="review-text">用了大概一年，稳定性很好，不会像其他家那样闪退用不了。客服也很好，多开功能让我的工作和生活完全分开，非常方便！</p>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
     </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("review-item");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            
+            slides[slideIndex-1].classList.add("active");
+            dots[slideIndex-1].classList.add("active");
+        }
+        
+        // 自动轮播
+        setInterval(function() {
+            slideIndex++;
+            showSlides(slideIndex);
+        }, 5000);
+    </script>
 </body>
 </html>
